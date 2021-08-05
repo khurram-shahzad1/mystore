@@ -1,0 +1,41 @@
+{
+	"": {
+		"prefix": "ajaxbyval",
+		"body": [
+		  "  $('#').on('click', function () {",
+		  "                var Id = $('#Id').val();",
+		  "                var email = $('#email').val();",
+		  "                var pass = $('#pass').val();",
+		  "                $.ajax({",
+		  "                    url: \"core/actions.php\",",
+		  "                    type: \"POST\",",
+		  "                    data: {",
+		  "                        email: email,",
+		  "                        pass: pass,",
+		  "                        Id: Id",
+		  "                    },",
+		  "                    cache: false,",
+		  "                    success: function (val) {",
+		  "                        console.log(val);",
+		  "                        if (val == \"0\" || val == \"\") {",
+		  "                            alert(\"Already Added!\");",
+		  "                            setTimeout(function () {",
+		  "                                location.reload();",
+		  "                            }, 500);",
+		  "",
+		  "                        } else {",
+		  "                            alert(\"Added!\");",
+		  "                            setTimeout(function () {",
+		  "                                location.replace('index.php');",
+		  "                            }, 500);",
+		  "",
+		  "                        }",
+		  "",
+		  "                    }",
+		  "                });",
+		  "            });",
+		  "        });"
+		],
+		"description": ""
+	  }
+}

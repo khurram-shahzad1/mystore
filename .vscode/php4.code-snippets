@@ -1,0 +1,12 @@
+{
+	"": {
+		"prefix": "delete",
+		"body": [
+		  "if(isset($$_POST['delUser'])) {",
+		  "    $$uid=$$_POST['delUser'];",
+		  "    echo mysqli_query($$GLOBALS['conn'], \"DELETE FROM user WHERE id = '$$uid'\");",
+		  "}"
+		],
+		"description": ""
+	  }
+}

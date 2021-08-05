@@ -1,0 +1,11 @@
+{
+	"": {
+		"prefix": "isset",
+		"body": [
+		  "",
+		  "if (isset($$_POST[''])) {",
+		  "}"
+		],
+		"description": ""
+	  }
+}

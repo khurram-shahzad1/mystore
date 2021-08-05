@@ -1,0 +1,12 @@
+{
+	
+"": {
+	"prefix": "select",
+	"body": [
+	  "$$sql = \"SELECT * FROM users\";",
+	  "$$query = mysqli_query($$GLOBALS['conn'], $$sql);",
+	  "$$s = 1 ;"
+	],
+	"description": ""
+  }
+}

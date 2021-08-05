@@ -1,0 +1,10 @@
+{
+	"": {
+		"prefix": "include",
+		"body": [
+		  "<?php include('header.php');",
+		  "?>"
+		],
+		"description": ""
+	  }
+}

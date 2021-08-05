@@ -1,0 +1,12 @@
+{
+	"": {
+		"prefix": "db",
+		"body": [
+		  "<?php ",
+		  "  $$db = mysqli_connect('localhost', 'root', '', 'dbname');",
+		  "  $$GLOBALS['conn'] = $$db;",
+		  "  ?>"
+		],
+		"description": ""
+	  }
+}

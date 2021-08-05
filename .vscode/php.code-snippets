@@ -1,0 +1,35 @@
+{
+	"": {
+		"prefix": "insert",
+		"body": [
+		  "",
+		  "if (isset($$_POST['signUp'])) {",
+		  "    $$email=$$_POST['email'];",
+		  "    $$password=$$_POST['password'];",
+		  "    $$name=$$_POST['name'];",
+		  "    $$age=$$_POST['age'];",
+		  "    $$address=$$_POST['address'];",
+		  "    $$user=$$_POST['user_type'];",
+		  "",
+		  "    if ($$name==\"\"|| $$email==\"\"|| $$password==\"\"|| $$user==\"\"|| $$age==\"\"|| $$address==\"\") {",
+		  "        echo 0;",
+		  "    }",
+		  "",
+		  "    else {",
+		  "        $$sql=\"INSERT into `user` (name,email,password,age,address,user_type) VALUES ('$$name','$$email' , '$$password', '$$age' , '$$address','$$user')\";",
+		  "",
+		  "        $$query=mysqli_query($$GLOBALS['conn'], $$sql);",
+		  "",
+		  "        if ($$query) {",
+		  "            echo 1;",
+		  "        }",
+		  "",
+		  "        else {",
+		  "            echo 0;",
+		  "        }",
+		  "    }",
+		  "}"
+		],
+		"description": ""
+	  }
+}

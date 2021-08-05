@@ -1,0 +1,32 @@
+{
+	"": {
+  "prefix": "ajaxform",
+  "body": [
+    "   $(function () {",
+    "            $('#').on('submit', function (e) {",
+    "                e.preventDefault();",
+    "                $.ajax({",
+    "                    type: 'post',",
+    "                    url: 'core/actions.php',",
+    "                    data: $('#').serialize(),",
+    "                    success: function (val) {",
+    "                        console.log(val);",
+    "                        if (val == \"0\" || val == \"\") {",
+    "                            alert(\"Error\");",
+    "                        } ",
+    "                           else {",
+    "                                setTimeout(function () {",
+    "                                    location.replace('shop.php');",
+    "                                }, 500);",
+    "                            }",
+    "                    }",
+    "                });",
+    "",
+    "            });",
+    "        })"
+  ],
+  "description": ""
+}
+
+	
+}

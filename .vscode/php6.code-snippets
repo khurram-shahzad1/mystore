@@ -1,0 +1,25 @@
+{
+	"": {
+		"prefix": "while",
+		"body": [
+		  "<?php while ($$data = mysqli_fetch_array($$query)) { ?>",
+		  "          <tr>",
+		  "            <td><?php echo $$s++ ?></td>",
+		  "            <td><?php echo $$data['name'] ?></td>",
+		  "            <td><?php echo $$data['email'] ?></td>",
+		  "            <td><?php echo $$data['password'] ?></td>",
+		  "            <td><?php echo $$data['age'] ?></td>",
+		  "            <td><?php echo $$data['address'] ?></td>",
+		  "            <td><?php echo $$data['status'] ?></td>",
+		  "            <td><?php echo $$data['user_type'] ?></td>",
+		  "            <td><?php echo $$data['timestamp'] ?></td>",
+		  "            <td>",
+		  "              <button uid=<?php echo $$data['id'] ?> class=\"btn btn-md btn-danger delUser\">Delete</button>",
+		  "            </td>",
+		  "          </tr>",
+		  "          <?php } ;?>"
+		],
+		"description": ""
+	  }
+	
+}
